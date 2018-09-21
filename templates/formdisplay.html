@@ -1,0 +1,7 @@
+<form action="{{ url_for('see_result') }}" method="POST">
+  {{ form.hidden_tag() }} 
+  {{ form.name.label }} {{ form.name() }}
+  {{ form.address.label }} {{ form.address() }}
+  {{ form.submit() }}
+</form>
+<!-- This is an HTML comment. They work a little differently from Python comments. This comment is to note that the hidden_tag is a special thing about how forms work, and we will discuss it in section or lecture next week! You can also read about it in upcoming readings. In short, that and a secret key in your app must exist for security, to send data between pages this way. -->
